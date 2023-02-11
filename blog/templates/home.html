@@ -1,0 +1,29 @@
+{% extends 'base.html' %} {% block title %}Home Page{% endblock title %}
+{% block content %}
+{% load static %}
+<h1>Post</h1>
+<ul>
+  {% for post in object_list %}
+  <div class="card mt-3">
+    <div class="row">
+      <div class="col-md-4">
+        {% if post.header_image %}
+        <img src="{{post.header_image.url}}" class="img-fluid" alt="">
+        {% else %}
+        <img src="{% static 'blog/images/default-images.png' %}" class="img-fluid" alt="">
+        {% endif %}
+
+      </div>
+      <div class="col-md-8">
+        <h3 class="card-title mt-3"><a href="{% url 'blogpost' post.pk %}"
+            class="link-dark text-decoration-none">{{post.title}}</a> - Category:<a href="{% url 'category_page' post.category|slugify %}"
+            class="link-dark text-decoration-none">{{post.category}}</a></h3>
+        <h4><small>By: {{post.author.first_name}} {{post.author.last_name}}</small></h4>
+        <p>{{post.snippet}}</p>
+        <a href="{% url 'blogpost' post.pk %}" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</ul>
+{% endblock content%}
