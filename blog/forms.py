@@ -5,9 +5,11 @@ from .models import Post, Category, Comment
 # choice = [('coding','coding'),('gaming','gaming'),('workout','workout'),]
 choice = Category.objects.all().values_list('name','name')
 choice_list = []
+# print(choice)
 
 for i in choice:
     choice_list.append(i)
+# print(choice_list)
 
 class PostForm(forms.ModelForm):
     class Meta:
