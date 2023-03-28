@@ -4,6 +4,7 @@ from django.views.generic import ListView, DetailView, CreateView, UpdateView, D
 from .models import Post, Category, Comment
 from .forms import PostForm, EditForm, CommentForm
 from django.http import HttpResponseRedirect
+from django.contrib import messages
 
 
 class HomeView(ListView):
@@ -30,7 +31,7 @@ class ArticalView(DetailView):
         stuff = get_object_or_404(Post, id=self.kwargs['pk'])
         total_likes = stuff.total_likes()
         liked = False
-        if stuff.likes.filter(id= self.request.user.id).exists():
+        if stuff.likes.filter(id=self.request.user.id).exists():
             liked = True
         context['cat_menu'] = cat_menu
         context['total_likes'] = total_likes
@@ -103,13 +104,36 @@ def LikeView(request, pk):
         liked = True
     return HttpResponseRedirect(reverse('blogpost', args=[str(pk)]))
 
+
 class AddCommentView(CreateView):
     model = Comment
     form_class = CommentForm
     template_name = 'Add_comments.html'
+
     def form_valid(self, form):
         form.instance.post_id = self.kwargs['pk']
         return super().form_valid(form)
     success_url = reverse_lazy('home')
+
+
+def search(request):
+    query = request.GET['query']
+    if len(query) > 78:
+        allPost = Post.objects.none()
+    else:
+        allPostTitle = Post.objects.filter(title__icontains=query)
+        allPostContent = Post.objects.filter(body__icontains=query)
+        if " " in query:
+            query = query.split(" ")
+            allPostAuthor = Post.objects.filter(author__first_name__icontains=query[0], author__last_name__icontains=query[1])
+        else:
+            allPostAuthor = Post.objects.filter(author__first_name__icontains=query)
+        # allPostAuthor = Post.objects.filter(author__first_name__icontains=query, author__last_name__icontains=query)
+        # print(allPostContent)
+        allPost = allPostTitle.union(allPostContent, allPostAuthor)
+    if allPost.count() == 0:
+        messages.warning(request, "No search results found. Please refine your query.")
+    params = {'allPost': allPost, 'query': query}
+    return render(request, 'search.html', params)
 
      

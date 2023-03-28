@@ -1,12 +1,13 @@
 from unicodedata import category
 from django.urls import path
-# from . import views
-from .views import HomeView, ArticalView, AddBlog, UpdateBlog, DeleteBlog, Addcategory, categoryView, LikeView, AddCommentView
+from . import views
+from .views import HomeView, ArticalView, AddBlog, UpdateBlog, DeleteBlog, Addcategory, categoryView, LikeView, AddCommentView, search
 
 urlpatterns = [
     # path('', views.home, name='home'),
     path('', HomeView.as_view(), name='home'),
     path('blogpost/<int:pk>', ArticalView.as_view(), name='blogpost'),
+    path('search/', search, name='search'),
     path('add_post/', AddBlog.as_view(), name='add_page'),
     path('blogpost/edit/<int:pk>/', UpdateBlog.as_view(), name='edit'),
     path('blogpost/delete/<int:pk>/', DeleteBlog.as_view(), name='delete'),
