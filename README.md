@@ -25,6 +25,6 @@ Create an web application to facilitate the blog creation capabilities.
 
 **Wireframe**: [https://drive.google.com/file/d/1MoxNL9Kpos30d4aLQVYDdKFBuIm6U7zS/view?usp=share_link](https://drive.google.com/file/d/1MoxNL9Kpos30d4aLQVYDdKFBuIm6U7zS/view?usp=share_link)
 
-**Architecture**: [ttps://drive.google.com/file/d/1fKNMbx-_fjdCPMjcVvLT4CCsd8htkw1J/view?usp=share_link](ttps://drive.google.com/file/d/1fKNMbx-_fjdCPMjcVvLT4CCsd8htkw1J/view?usp=share_link)
+**Architecture**: [https://drive.google.com/file/d/1fKNMbx-_fjdCPMjcVvLT4CCsd8htkw1J/view?usp=share_link](https://drive.google.com/file/d/1fKNMbx-_fjdCPMjcVvLT4CCsd8htkw1J/view?usp=share_link)
 
 **Project Report**: [https://docs.google.com/presentation/d/1K5dI4nK5MXX5Nxhtrmx_PAT1GcGZMIY7sp9TYi5hwCU/edit?usp=share_link](https://docs.google.com/presentation/d/1K5dI4nK5MXX5Nxhtrmx_PAT1GcGZMIY7sp9TYi5hwCU/edit?usp=share_link)
