@@ -17,6 +17,8 @@ Create an web application to facilitate the blog creation capabilities.
 3. HTML
 4. CSS and JavaScripts
 
+## URL: [https://web-production-522e.up.railway.app/](https://web-production-522e.up.railway.app/)
+
 ## Documents ##
 
 **HLD**: [https://drive.google.com/file/d/1gZ1g1fhsufXUYSjIJhzqE7cikJiPq2kA/view?usp=share_link](https://drive.google.com/file/d/1gZ1g1fhsufXUYSjIJhzqE7cikJiPq2kA/view?usp=share_link)
