@@ -23,7 +23,7 @@ Create an web application to facilitate the blog creation capabilities.
 
 **HLD**: [https://drive.google.com/file/d/1gZ1g1fhsufXUYSjIJhzqE7cikJiPq2kA/view?usp=share_link](https://drive.google.com/file/d/1gZ1g1fhsufXUYSjIJhzqE7cikJiPq2kA/view?usp=share_link)
 
-**LLD**: [https://drive.google.com/file/d/1fKNMbx-_fjdCPMjcVvLT4CCsd8htkw1J/view?usp=share_link](https://drive.google.com/file/d/1fKNMbx-_fjdCPMjcVvLT4CCsd8htkw1J/view?usp=share_link)
+**LLD**: [https://drive.google.com/file/d/1huf-inxdMJppCpQl7iLHd05E37eY7_Mv/view?usp=sharing](https://drive.google.com/file/d/1huf-inxdMJppCpQl7iLHd05E37eY7_Mv/view?usp=sharing)
 
 **Wireframe**: [https://drive.google.com/file/d/1MoxNL9Kpos30d4aLQVYDdKFBuIm6U7zS/view?usp=share_link](https://drive.google.com/file/d/1MoxNL9Kpos30d4aLQVYDdKFBuIm6U7zS/view?usp=share_link)
 
