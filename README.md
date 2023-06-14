@@ -18,6 +18,7 @@ Create an web application to facilitate the blog creation capabilities.
 4. CSS and JavaScripts
 
 ## URL: [https://web-production-522e.up.railway.app/](https://web-production-522e.up.railway.app/)
+## LinkedIn Post: https://www.linkedin.com/posts/tusharjain8177_project-internship-python-activity-7061708620748529665-_DL7?utm_source=share&utm_medium=member_desktop
 
 ## Documents ##
 
